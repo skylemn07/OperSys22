@@ -1,0 +1,8 @@
+    1  whoami
+    2  cd ~/week1
+    3  pwd
+    4  cd /usr/bin
+    5  pwd
+    6  cd
+    7  pwd
+    8  history > ~/week1/ex2.txt
