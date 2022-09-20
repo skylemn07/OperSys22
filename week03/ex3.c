@@ -50,8 +50,9 @@ int main(){
     char content4[] = "Bourne Again Shell!";
 
 
-
-    Directory home, bin, root;
+    Directory root = {0, 0, {}, {}, "/"};
+    Directory home = {0, 0, {}, {}, "/home"};
+    Directory bin = {0, 0, {}, {}, "/bin"};
 
     // Example: the path of the folder home is /home
 
@@ -59,7 +60,9 @@ int main(){
     add_dir(&home, &root);
     add_dir(&bin, &root);
 
-    File bash, ex31, ex32;
+    File bash = {0, "bash", 0, "", NULL};
+    File ex31 = {0, "ex31", 0, "", NULL};
+    File ex32 = {0, "ex32", 0, "", NULL};
 
     add_file (&bash, &bin);
 
@@ -141,10 +144,8 @@ void append_to_file(File *file, const char * content) {
 // Prints the path of the File file
 void pwd_file(File * file) {
     printf("the path file is ");
-    for(int i = 0; i < sizeof(file->directory->path); i++){
-        printf("/%s", file->directory->path);
-    }
-    printf("%c", '\n');
+    printf("/%s", file->directory->path);
+    printf("\n");
     // Example: the path for bash file is /bin/bash
 
 }
@@ -162,7 +163,7 @@ void add_file(File* file, Directory *dir) {
 // Given to you
 // Adds the subdirectory dir1 to the directory dir2
 void add_dir(Directory *dir1, Directory *dir2){
-    if (dir1 && dir2){
+    if (dir1 != NULL && dir2 != NULL){
         dir2->directories[dir2->nd] = dir1;
         dir2->nd++;
     }
