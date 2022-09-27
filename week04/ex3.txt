@@ -1,0 +1,26 @@
+result for n = 3:
+ex3─┬─ex3─┬─ex3───ex3
+    │     └─ex3
+    ├─ex3───ex3
+    └─ex3
+    
+result for n = 5:
+ex3─┬─ex3─┬─ex3─┬─ex3─┬─ex3───ex3
+    │     │     │     └─ex3
+    │     │     ├─ex3───ex3
+    │     │     └─ex3
+    │     ├─ex3─┬─ex3───ex3
+    │     │     └─ex3
+    │     ├─ex3───ex3
+    │     └─ex3
+    ├─ex3─┬─ex3─┬─ex3───ex3
+    │     │     └─ex3
+    │     ├─ex3───ex3
+    │     └─ex3
+    ├─ex3─┬─ex3───ex3
+    │     └─ex3
+    ├─ex3───ex3
+    └─ex3
+
+difference:
+We can see that each process creates (n - i) children where i is a current index of for-loop. So, we have that for n loops, it will create 2^n processes. For n = 3 we see 8 = 2^3 processes and for n = 5 32 = 2^5 processes.
