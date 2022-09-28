@@ -12,7 +12,7 @@ int main() {
         fgets(command, 1001, stdin);
         int pid = fork();
         if (pid == 0){
-            system(command);
+            system(command&);
             exit(EXIT_SUCCESS);
         }
         
