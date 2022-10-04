@@ -1,0 +1,16 @@
+
+real 68.16
+user 68.16
+sys 0.00
+real 133.14
+user 130.73
+sys 26.48
+real 215.40
+user 228.95
+sys 43.99
+real 257.15
+user 282.88
+sys 58.28
+real 282.10
+user 311.61
+sys 69.58

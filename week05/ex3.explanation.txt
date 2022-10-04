@@ -1,0 +1,1 @@
+In this case, we can notice that the threads process basically the same segment sizes.  When the number of threads increases, there is an increase in the execution time of the program, but when the number of threads exceeds the number of cores, there is no increase. In my case, there is a small increase, since my device has 16 cores.
