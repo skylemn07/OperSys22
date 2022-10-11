@@ -1,0 +1,5 @@
+Comparing the FCFS output and the output of the shortest job first, you can see from the average TAT, average WT and Completion time of the last process that the shortest job first works faster. This follows from the principles of operation of each method.
+
+Shortest job first sorts in ascending order first arrival time, then burst time, so the process with the lowest arrival time and burst time will be executed first, then the processes are executed in ascending order burst time. 
+ 
+FCFS sorts processes only by arrival time, so the processes will be executed first in ascending order of arrival time, regardless of the burst time order of the processes.

@@ -1,0 +1,7 @@
+Comparing the FCFS output, the shortest job first output and the round robin output, you can see from the average TAT, average WT and Completion time of the last process that the shortest job first works faster. This follows from the principles of operation of each method.
+
+Shortest job first sorts in ascending order first arrival time, then burst time, so the process with the lowest arrival time and burst time will be executed first, then the processes are executed in ascending order burst time.
+  
+FCFS sorts processes only by arrival time, so the processes will be executed first in ascending order of arrival time, regardless of the burst time order of the processes.
+
+Round robin works on a similar principle to FCFS, the difference lies in the presence of quantum in Round robin, which implies the time interval allotted for the execution of the process. If the process has not completed in one quantum, then it will continue its execution after passing all the processes, that is, when the queue reaches it. If the process is completed, it is removed from the queue. The fastest way will work if the quantum is equal to the largest burst time value.
