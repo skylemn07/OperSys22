@@ -1,0 +1,4 @@
+Virtual address is an address that refers to the virtual memory which is an abstraction of physical memory. 
+
+Physical address is an exact hardware address of a physical memory cell and CPU interacts with by putting it to the processor bus.
+

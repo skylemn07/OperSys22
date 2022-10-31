@@ -1,0 +1,4 @@
+One page contains 8KB = 2^13 bytes, so number of pages equal 2^16/2^13 = 2^3 = 8.
+
+Answer: 8 pages
+
