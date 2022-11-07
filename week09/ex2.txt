@@ -1,0 +1,1 @@
+After several tests, a certain dependence of hits/misses was noticed, on the basis of which it can be concluded that the number of links to pages between the same links in the sequence is greater than the number of page frames, a page error will occur.
