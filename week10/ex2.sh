@@ -6,3 +6,8 @@ link ../week01/file.txt _ex2.txt
 
 find ../ -inum $(ls -i ../week01/file.txt | awk '{print $1}') > ex2.txt
 find ../ -inum $(ls -i ../week01/file.txt | awk '{print $1}') -exec rm {} \;
+
+#file.txt was deleted, but in the task we should submit it
+#so it creates again, but in week10 directory
+touch file.txt
+echo "Anastasia" > file.txt
