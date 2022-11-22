@@ -62,11 +62,12 @@ int main() {
             continue;
         }
 
+        
         pageFrames[min] = buf;
     }
 
-    double ratio = (double)(hit) / (all - hit);
-    printf("hit: %d, miss: %d, ratio: %f\n", hit, all - hit, ratio);
+    double ratio = (double)(hit) / (all - hit - 1);
+    printf("hit: %d, miss: %d, ratio: %f\n", hit, all - hit - 1, ratio);
     free(pageFrames);
     fclose(inputFile);
 
